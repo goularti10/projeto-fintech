@@ -24,8 +24,9 @@
     font-size: 1rem;
     color: rgb(124, 124, 124);
     position: relative;
-    top: 0;
-    right: 18.7rem;
+    bottom: 1.9rem;
+    left: 1.2rem;
+    
 }
 
 .barra-de-pesquisa {
@@ -126,6 +127,8 @@ input:focus {
     border-radius: 15px;
     text-align: center;
     transition: .5s;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .ferramentas-item a {
@@ -171,6 +174,32 @@ input:focus {
 
 @media (max-width: 800px) {
     .h4-outras-ferramentas {
-        margin-left: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logotipo-profile {
+        font-size: .7rem;
+    }
+
+    .barra-de-pesquisa {
+        padding: 10px 15px;
+    }
+
+    .logotipo-search {
+        position: relative;
+        right: 2rem;
+    }
+
+    .logotipo-date {
+        font-size: 1rem;
+    }
+
+    .ferramentas-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
